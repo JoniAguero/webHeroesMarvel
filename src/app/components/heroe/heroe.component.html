@@ -1,0 +1,16 @@
+<p class="ptittle">{{heroe.nombre | uppercase }}<small class="italic"> ({{heroe.aparicion | date:'y'}})</small></p>
+<div class="row">
+  <div class="col-md-4 imgHeroe">
+    <figure>
+      <img class="img-fluid" src="{{heroe.img}}">
+    </figure>
+  </div>
+
+  <div class="col-md-8">
+    <p style="font-size: 2em;">{{heroe.nombre}} - Biografía</p>
+    <p>{{heroe.bio}}</p>
+  </div>
+  <div class="col-md-4">
+    <a [routerLink]="['/heroes']" class="btn btn-outline-danger btn-block">Volver..</a>
+  </div>
+</div>
